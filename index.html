@@ -22,8 +22,9 @@
 <body>
 
 <a href="#contenido" class="visually-hidden">Saltar al contenido</a>
+<div id="topSentinel" aria-hidden="true"></div>
 
-<header class="site-header">
+<header class="site-header" id="siteHeader">
   <div class="wrap header-inner">
     <a href="#inicio" class="brand">
       <svg class="brand-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -41,9 +42,9 @@
     <nav aria-label="Navegación principal">
       <ul class="nav-links">
         <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#espacio">El estudio</a></li>
         <li><a href="#vencimientos">Vencimientos</a></li>
         <li><a href="#equipo">Equipo</a></li>
-        <li><a href="#coworking">Coworking</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
@@ -61,9 +62,9 @@
   <div class="mobile-menu" id="mobileMenu">
     <div class="wrap">
       <a href="#servicios">Servicios</a>
+      <a href="#espacio">El estudio</a>
       <a href="#vencimientos">Vencimientos</a>
       <a href="#equipo">Equipo</a>
-      <a href="#coworking">Coworking</a>
       <a href="#contacto">Contacto</a>
       <a class="btn btn-primary" href="https://wa.me/5493476394945?text=Hola%20VEP%2C%20quer%C3%ADa%20hacer%20una%20consulta" target="_blank" rel="noopener">Escribinos por WhatsApp</a>
     </div>
@@ -74,9 +75,10 @@
 
   <!-- HERO -->
   <section class="hero" id="inicio">
+    <div class="hero-bg-blob"></div>
     <div class="wrap hero-grid">
       <div class="hero-copy reveal">
-        <h1>Tu estudio contable, impositivo y jurídico.</h1>
+        <h1>Tu estudio <span class="accent-text">contable, impositivo y jurídico</span>.</h1>
         <p class="lede">Hace 25 años acompañamos a empresas, comercios y familias de San Lorenzo y el cordón industrial con atención cercana y resolutiva.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="https://wa.me/5493476394945?text=Hola%20VEP%2C%20quer%C3%ADa%20hacer%20una%20consulta" target="_blank" rel="noopener">
@@ -88,7 +90,7 @@
       </div>
 
       <div class="hero-visual reveal">
-        <div class="frame">
+        <div class="frame" id="tiltFrame">
           <img src="assets/img/hero-oficina.jpg" alt="Equipo de VEP Asesoría Integral trabajando en la oficina de San Lorenzo" width="1400" height="1200" loading="eager">
         </div>
         <div class="hero-badge">
@@ -99,23 +101,35 @@
     </div>
   </section>
 
+  <!-- TICKER -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <div class="ticker-set">
+        <span>Monotributo</span><span>IVA</span><span>Impuesto a las Ganancias</span><span>Ingresos Brutos</span><span>Sueldos y cargas sociales</span><span>Balances</span><span>Sucesiones</span><span>Divorcios</span><span>Contratos</span><span>Accidentes de tránsito</span><span>Coworking</span><span>Sala de reuniones</span>
+      </div>
+      <div class="ticker-set">
+        <span>Monotributo</span><span>IVA</span><span>Impuesto a las Ganancias</span><span>Ingresos Brutos</span><span>Sueldos y cargas sociales</span><span>Balances</span><span>Sucesiones</span><span>Divorcios</span><span>Contratos</span><span>Accidentes de tránsito</span><span>Coworking</span><span>Sala de reuniones</span>
+      </div>
+    </div>
+  </div>
+
   <!-- STATS -->
   <div class="stats">
     <div class="wrap stats-grid">
       <div class="reveal">
-        <div class="stat-num">25</div>
+        <div class="stat-num" data-count="25">0</div>
         <div class="stat-label">años de trayectoria</div>
       </div>
       <div class="reveal">
-        <div class="stat-num">7</div>
+        <div class="stat-num" data-count="7">0</div>
         <div class="stat-label">profesionales en el equipo</div>
       </div>
       <div class="reveal">
-        <div class="stat-num">2</div>
+        <div class="stat-num" data-count="2">0</div>
         <div class="stat-label">áreas bajo un mismo techo: contable y jurídica</div>
       </div>
       <div class="reveal">
-        <div class="stat-num">8</div>
+        <div class="stat-num" data-count="8">0</div>
         <div class="stat-label">localidades de la zona de cobertura</div>
       </div>
     </div>
@@ -125,41 +139,14 @@
   <section id="servicios">
     <div class="wrap">
       <div class="section-head reveal">
+        <span class="eyebrow">Qué hacemos</span>
         <h2>Servicios</h2>
         <p>Asesoramiento contable, impositivo y jurídico para personas físicas, monotributistas, sociedades y municipalidades.</p>
       </div>
 
       <div class="bento">
-        <article class="card-servicio is-tall reveal">
-          <img src="assets/img/archivo-organizado.jpg" alt="Archivo contable organizado en la oficina de VEP" loading="lazy">
-          <div class="card-servicio-body">
-            <h3>Contable e impositivo</h3>
-            <p>Monotributo, IVA, Ganancias, Ingresos Brutos, sueldos y balances. Nos ocupamos de tus vencimientos para que vos te ocupes de tu negocio.</p>
-            <div class="chip-row">
-              <span class="chip">Monotributo</span>
-              <span class="chip">IVA y Ganancias</span>
-              <span class="chip">Ingresos Brutos</span>
-              <span class="chip">Sueldos y cargas sociales</span>
-              <span class="chip">Balances</span>
-              <span class="chip">Auditorías</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="card-servicio reveal">
-          <img src="assets/img/reunion-cliente.jpg" alt="Abogadas de VEP asesorando a un cliente" loading="lazy">
-          <div class="card-servicio-body">
-            <h3>Jurídico</h3>
-            <p>Sucesiones, divorcios, contratos y accidentes de tránsito, con acompañamiento personal en cada etapa.</p>
-            <div class="chip-row">
-              <span class="chip">Familia y sucesiones</span>
-              <span class="chip">Contratos y alquileres</span>
-              <span class="chip">Accidentes de tránsito</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="card-servicio reveal" id="coworking">
+        <article class="card-servicio is-tall reveal" id="coworking">
+          <span class="badge-live">Escritorios disponibles</span>
           <img src="assets/img/escritorio-coworking.jpg" alt="Escritorio disponible para coworking en las oficinas de VEP" loading="lazy">
           <div class="card-servicio-body">
             <h3>Coworking y sala de reuniones</h3>
@@ -167,6 +154,104 @@
             <a class="btn btn-primary btn-sm" href="https://wa.me/5493476394945?text=Hola%2C%20quiero%20consultar%20por%20el%20coworking%20y%20la%20sala%20de%20reuniones" target="_blank" rel="noopener">Consultar disponibilidad</a>
           </div>
         </article>
+
+        <div class="svc-row" style="display:contents">
+          <article class="card-icon-servicio reveal">
+            <div class="svc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19h16"/><path d="M6 19V9l4-3 4 3v10"/><path d="M14 19v-6l4-2v8"/></svg>
+            </div>
+            <h3>Contable e impositivo</h3>
+            <p>Monotributo, IVA, Ganancias, Ingresos Brutos, sueldos y balances. Nos ocupamos de tus vencimientos para que vos te ocupes de tu negocio.</p>
+            <div class="chip-row">
+              <span class="chip">Monotributo</span>
+              <span class="chip">IVA y Ganancias</span>
+              <span class="chip">Ingresos Brutos</span>
+              <span class="chip">Sueldos</span>
+              <span class="chip">Balances</span>
+              <span class="chip">Auditorías</span>
+            </div>
+          </article>
+
+          <article class="card-icon-servicio reveal">
+            <div class="svc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h5l-2.5 6a3 3 0 0 1-5 0z"/><path d="M14 7h5l-2.5 6a3 3 0 0 1-5 0z"/><path d="M5 7h14"/><path d="M8 21h8"/></svg>
+            </div>
+            <h3>Jurídico</h3>
+            <p>Sucesiones, divorcios, contratos y accidentes de tránsito, con acompañamiento personal en cada etapa.</p>
+            <div class="chip-row">
+              <span class="chip">Familia y sucesiones</span>
+              <span class="chip">Contratos y alquileres</span>
+              <span class="chip">Accidentes de tránsito</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EL ESPACIO -->
+  <section id="espacio" style="background:var(--paper-50); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Conocé el estudio</span>
+        <h2>Un espacio pensado para trabajar tranquilos</h2>
+        <p>Oficinas luminosas en el centro de San Lorenzo, con una sala de reuniones propia para cada consulta.</p>
+      </div>
+
+      <div class="gallery">
+        <div class="gallery-cell g-hero reveal">
+          <img src="assets/img/sala-reuniones.jpg" alt="Sala de reuniones equipada de VEP Asesoría Integral" loading="lazy">
+          <span class="g-cap">Sala de reuniones equipada</span>
+        </div>
+        <div class="gallery-cell g-b reveal">
+          <img src="assets/img/frente-edificio.jpg" alt="Frente del edificio de VEP en San Lorenzo" loading="lazy">
+          <span class="g-cap">Nuestra oficina en 3 de Febrero 833</span>
+        </div>
+        <div class="gallery-cell g-c reveal">
+          <img src="assets/img/equipo-trabajo.jpg" alt="Equipo de VEP trabajando en conjunto" loading="lazy">
+          <span class="g-cap">El equipo, día a día</span>
+        </div>
+        <div class="gallery-cell g-d reveal">
+          <img src="assets/img/archivo-organizado.jpg" alt="Archivo contable organizado en la oficina de VEP" loading="lazy">
+          <span class="g-cap">Todo tu archivo, en orden</span>
+        </div>
+        <div class="gallery-cell g-e reveal">
+          <img src="assets/img/reunion-cliente.jpg" alt="Reunión de asesoramiento con un cliente en VEP" loading="lazy">
+          <span class="g-cap">Reuniones con clientes, cara a cara</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CÓMO TRABAJAMOS -->
+  <section>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Proceso</span>
+        <h2>Así te acompañamos, paso a paso</h2>
+      </div>
+
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step-num"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.75.46 3.45 1.33 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2z"/></svg></div>
+          <h3>Nos escribís</h3>
+          <p>Nos contás tu consulta por WhatsApp, de forma presencial o por videollamada.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
+          <h3>Diagnosticamos</h3>
+          <p>Revisamos tu situación contable, impositiva o legal sin vueltas ni tecnicismos.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></div>
+          <h3>Te proponemos un plan</h3>
+          <p>Te decimos qué hay que hacer, en qué plazos y qué necesitamos de vos.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg></div>
+          <h3>Hacemos el seguimiento</h3>
+          <p>Te avisamos antes de cada vencimiento para que nunca se te pase nada.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -181,8 +266,13 @@
 
       <div class="venc-grid">
         <div class="venc-card reveal">
-          <h3>ARCA (Nacional)</h3>
-          <div class="venc-org">Organismo nacional</div>
+          <div class="venc-card-head">
+            <div class="venc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg></div>
+            <div>
+              <h3>ARCA</h3>
+              <div class="venc-org">Organismo nacional</div>
+            </div>
+          </div>
           <div class="venc-list">
             <div class="venc-item"><span class="name">Autónomos</span><span class="days">6, 7 y 8</span></div>
             <div class="venc-item"><span class="name">F931 (sueldos)</span><span class="days">9, 10 y 11</span></div>
@@ -192,8 +282,13 @@
         </div>
 
         <div class="venc-card reveal">
-          <h3>API (Provincial)</h3>
-          <div class="venc-org">Organismo provincial</div>
+          <div class="venc-card-head">
+            <div class="venc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div>
+            <div>
+              <h3>API</h3>
+              <div class="venc-org">Organismo provincial</div>
+            </div>
+          </div>
           <div class="venc-list">
             <div class="venc-item"><span class="name">Ingresos Brutos</span><span class="days">15 al 18</span></div>
             <div class="venc-item"><span class="name">Plan de pago (1er venc.)</span><span class="days">día 16</span></div>
@@ -202,8 +297,13 @@
         </div>
 
         <div class="venc-card reveal">
-          <h3>Municipalidad</h3>
-          <div class="venc-org">Organismo municipal</div>
+          <div class="venc-card-head">
+            <div class="venc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V9l7-5 7 5v12"/><path d="M9 21v-6h6v6"/></svg></div>
+            <div>
+              <h3>Municipalidad</h3>
+              <div class="venc-org">Organismo municipal</div>
+            </div>
+          </div>
           <div class="venc-list">
             <div class="venc-item"><span class="name">DReI</span><span class="days">10, 11 y 12</span></div>
           </div>
@@ -366,7 +466,7 @@
             </div>
 
             <div class="contact-row">
-              <div class="dif-icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.75.46 3.45 1.33 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2z" opacity="0"/><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.75.46 3.45 1.33 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2zm5.8 14.2c-.24.68-1.4 1.3-1.93 1.36-.5.06-1.02.26-3.4-.71-2.87-1.18-4.72-4.06-4.87-4.25-.14-.19-1.17-1.56-1.17-2.98s.74-2.11 1-2.4c.26-.29.57-.36.76-.36l.55.01c.18 0 .41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.75 1.24 1.62 2.01 1.11 1 2.05 1.31 2.34 1.46.29.15.46.12.63-.07.17-.19.72-.84.92-1.13.19-.29.38-.24.64-.14.26.1 1.66.78 1.94.93.29.14.48.21.55.33.07.12.07.68-.17 1.36z"/></svg></div>
+              <div class="dif-icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.75.46 3.45 1.33 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2zm5.8 14.2c-.24.68-1.4 1.3-1.93 1.36-.5.06-1.02.26-3.4-.71-2.87-1.18-4.72-4.06-4.87-4.25-.14-.19-1.17-1.56-1.17-2.98s.74-2.11 1-2.4c.26-.29.57-.36.76-.36l.55.01c.18 0 .41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.75 1.24 1.62 2.01 1.11 1 2.05 1.31 2.34 1.46.29.15.46.12.63-.07.17-.19.72-.84.92-1.13.19-.29.38-.24.64-.14.26.1 1.66.78 1.94.93.29.14.48.21.55.33.07.12.07.68-.17 1.36z"/></svg></div>
               <div>
                 <div class="label">WhatsApp y teléfono</div>
                 <a class="value" href="https://wa.me/5493476394945" target="_blank" rel="noopener">3476 394945</a>
@@ -450,9 +550,9 @@
       <h4>Navegación</h4>
       <ul>
         <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#espacio">El estudio</a></li>
         <li><a href="#vencimientos">Vencimientos</a></li>
         <li><a href="#equipo">Equipo</a></li>
-        <li><a href="#coworking">Coworking</a></li>
       </ul>
     </div>
 
