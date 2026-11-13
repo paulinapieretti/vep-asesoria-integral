@@ -1610,9 +1610,9 @@ section {
 }
 
 /* ---------- Encuadre de fotos ---------- */
-.hero-visual img { object-position: 50% 55%; }
+.hero-visual img { object-position: 50% 46%; }
 .g-hero img { object-position: 50% 42%; }
 .g-b img { object-position: 55% 50%; }
-.g-c img { object-position: 50% 52%; }
+.g-c img { object-position: 50% 50%; }
 .g-d img { object-position: 50% 40%; }
-.g-e img { object-position: 50% 42%; }
+.g-e img { object-position: 50% 40%; }
