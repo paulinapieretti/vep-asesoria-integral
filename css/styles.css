@@ -1149,10 +1149,10 @@ section {
 }
 
 .avatar-photo {
-  width: 84px;
-  height: 84px;
+  width: 96px;
+  height: 96px;
   background-color: var(--paper-50);
-  background-size: 190% auto;
+  background-size: 140% auto;
   background-repeat: no-repeat;
   border: 2px solid var(--surface-raised);
   box-shadow: 0 6px 18px -8px hsl(var(--shadow-color) / 0.45);
