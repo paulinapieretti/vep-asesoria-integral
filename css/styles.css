@@ -1148,6 +1148,16 @@ section {
   transition: transform 0.3s var(--ease);
 }
 
+.avatar-photo {
+  width: 84px;
+  height: 84px;
+  background-color: var(--paper-50);
+  background-size: 190% auto;
+  background-repeat: no-repeat;
+  border: 2px solid var(--surface-raised);
+  box-shadow: 0 6px 18px -8px hsl(var(--shadow-color) / 0.45);
+}
+
 .team-card:hover .avatar {
   transform: scale(1.08);
 }
